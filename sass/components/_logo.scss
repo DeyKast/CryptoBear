@@ -1,0 +1,22 @@
+.logoWrapper {
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 122px;
+  height: 86px;
+
+  
+}
+.logoImage {
+}
+
+.logoText {
+  font-family: var(--press-start-text-family);
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}

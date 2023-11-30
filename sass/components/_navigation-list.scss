@@ -1,0 +1,35 @@
+.headerNavigationList {
+  display: none;
+}
+
+.headerNavigationListItem {
+  color: var(--gray-0-color);
+  line-height: 180%;
+  letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerNavigationList {
+    gap: 16px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerNavigationListItem {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headerNavigationListItem {
+    font-size: 20px;
+  }
+
+  .headerNavigationList {
+    gap: 32px;
+    margin-top: 10px;
+  }
+}

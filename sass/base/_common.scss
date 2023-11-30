@@ -1,6 +1,6 @@
 body {
     font-family: var(--rubik-text-family);
-    color: var(--light-text-color);
+    color: var(--gray-0-color);
     letter-spacing: 0.03em;
 }
 
@@ -14,6 +14,12 @@ ul {
     padding-top: 0;
     margin: 0;
     padding-left: 0;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 h1,

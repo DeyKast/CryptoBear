@@ -7,22 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
     />
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
 
     <title>CryptoBear</title>
   </head>
   <body>
-    <header class="container headerContainer">
-      <div>
-        <div>
-          <img src="./images/logo.png" alt="" srcset="" />
-        </div>
-        <div></div>
+    <header class="section headerSection">
+      <div class="container headerContainer">
+        <a href="#" class="logoWrapper">
+          <img src="./images/logo.png" alt="logo" class="logoImage" />
+          <p class="logoText">cryptobear</p>
+        </a>
+
+        <nav>
+          <ul class="headerNavigationList">
+            <li class="headerNavigationListItem">
+              <a href="#">About Event</a>
+            </li>
+            <li class="headerNavigationListItem">
+              <a href="#">Discussion topics</a>
+            </li>
+            <li class="headerNavigationListItem">
+              <a href="#">Our speakers</a>
+            </li>
+            <li class="headerNavigationListItem">
+              <a href="#">Our sponsors</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main></main>
