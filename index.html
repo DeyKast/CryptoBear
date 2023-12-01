@@ -46,18 +46,24 @@
         </nav>
         <button type="button" class="burgerMenuBtn">
           <svg class="burgerMenuBtnIcon">
-            <use href="./images/sprite.svg#icon-menu"></use>
+            <use href="./images/svg/sprite.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
     </header>
     <main>
       <div class="section heroSection">
-        <img src="./images/leftShapes.png" alt="LShapes " class="leftShapes" />
+        <img
+          src="./images/leftShapes.png"
+          alt="LShapes "
+          class="leftShapes"
+          id="parallaxed"
+        />
         <img
           src="./images/rightShapes.png"
           alt="LShapes "
           class="rightShapes"
+          id="parallaxed"
         />
         <div class="container heroContainer">
           <h1 class="heroTitle">
@@ -72,7 +78,437 @@
           <button type="button" class="button">buy ticket</button>
         </div>
       </div>
+
+      <div class="section sectionAbout">
+        <div class="container containerAbout">
+          <div class="timerContainer">
+            <div class="dateWrapper">
+              <p id="tomorrowDay"></p>
+
+              <div class="tomorrowDateWrapper">
+                <p id="tomorrowMonth"></p>
+                <p id="tomorrowYear"></p>
+              </div>
+            </div>
+            <div class="timerWrapper">
+              <div class="timerWrapperItem">
+                <div class="timerWrapperItemBlock"><p id="timerDays"></p></div>
+                <p style="text-transform: uppercase; font-size: 16px">days</p>
+              </div>
+              <div class="timerWrapperItem">
+                <div class="timerWrapperItemBlock"><p id="timerHours"></p></div>
+                <p style="text-transform: uppercase; font-size: 16px">hours</p>
+              </div>
+              <div class="timerWrapperItem">
+                <div class="timerWrapperItemBlock">
+                  <p id="timerMinutes"></p>
+                </div>
+                <p style="text-transform: uppercase; font-size: 16px">minuts</p>
+              </div>
+              <div class="timerWrapperItem">
+                <div class="timerWrapperItemBlock">
+                  <p id="timerSeconds"></p>
+                </div>
+                <p style="text-transform: uppercase; font-size: 16px">
+                  seconds
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="aboutTextWrapper">
+            <h2 class="aboutTextWrapperTitle">About Event</h2>
+            <p class="aboutTextWrapperText">
+              <span style="font-weight: 500">CryptoBEAR</span> is the blockchain
+              conference network bringing together the key players of crypto
+              industry and experts to redefine the future of finance. The
+              edition of the CryptoBEAR will take place during on
+              <span id="aboutTextDate" style="text-transform: uppercase"></span>
+              in Dubai, with the world’s top crypto companies and blockchain
+              entrepreneurs. Today, UAE, specifically Dubai is gearing up to
+              become a global crypto hub. Thus, CryptoBEAR will be the gathering
+              in the region on behalf of the world of blockchain and
+              cryptocurrency, with a wide range of topics focused on the
+              financial technologies of the future, extensive networking
+              opportunities and participation from more than 40 countries.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section sectionTopics">
+        <div class="container">
+          <h2 class="topicsTitle">
+            Discussion
+            <span class="topicsTitlePart" data-content="Topics">Topics</span>
+          </h2>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 24px;
+            "
+          >
+            <ul class="topicsList">
+              <li class="topicsListItem">
+                <div class="topicsListItemContainerWrapper">
+                  <div class="topicListItemWrapper">
+                    <svg class="topicsListItemIcon" >
+                      <use href="./images/svg/sprite.svg#topic-1-icon"></use>
+                    </svg>
+                    <div class="topicListItemTextWrapper">
+                      <p class="topicTitle">
+                        WHAT WEB 3.0 MEANS FOR ENTERPRISES
+                      </p>
+                      <p class="topicText">Sunny Lu</p>
+                    </div>
+                    <svg class="arrowIcon">
+                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon" style="height: 55px">
+                    <use href="./images/svg/sprite.svg#topic-2-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">VALUE CREATION IN THE METAVERSE</p>
+                    <p class="topicText">Gracy Chen</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <img
+                    src="./images/svg/topic-3.png"
+                    alt="topic-3"
+                    style="margin-right: 50px"
+                  />
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM
+                    </p>
+                    <p class="topicText">
+                      Nena Dokuzov & Jean Charles Gaudechon
+                    </p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon" style="height: 60px">
+                    <use href="./images/svg/sprite.svg#topic-4-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS
+                    </p>
+                    <p class="topicText">Max Kordek</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon">
+                    <use href="./images/svg/sprite.svg#topic-5-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      MAXIMIZING ESG IMPACT WITH BLOCKCHAIN
+                    </p>
+                    <p class="topicText">Helen Hai</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon">
+                    <use href="./images/svg/sprite.svg#topic-6-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">BRIDGING DEFI AND CEFI</p>
+                    <p class="topicText">Jason Allegrante</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon">
+                    <use href="./images/svg/sprite.svg#topic-7-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">WEB 3 GAMING: THE NEW FRONTIER?</p>
+                    <p class="topicText">Sunny Lu</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon">
+                    <use href="./images/svg/sprite.svg#topic-8-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS
+                    </p>
+                    <p class="topicText">Reece Merrick</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <img
+                    src="./images/svg/topic-9.png"
+                    alt="topic-9"
+                    style="margin-right: 50px"
+                  />
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS
+                    </p>
+                    <p class="topicText">Mohammed Alblooshi</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <img
+                    src="./images/svg/topic-10.png"
+                    alt="topic-10"
+                    style="margin-right: 50px"
+                  />
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">WEB 3: THE FUTURE IS HERE AND NOW</p>
+                    <p class="topicText">Sunny Lu</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon">
+                    <use href="./images/svg/sprite.svg#topic-11-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES
+                    </p>
+                    <p class="topicText">Alex Zinder & Nicole Purin</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+                <div class="topicsListItemInfo">
+                  <p>
+                    CryptoBEAR is the blockchain conference network bringing
+                    together the key players of crypto industry and experts to
+                    redefine the future of finance. The edition of the
+                    CryptoBEAR will take place during on NOVEMBER 30, 2023 in
+                    Dubai, with the world’s top crypto companies and blockchain
+                    entrepreneurs. Today, UAE, specifically Dubai is gearing up
+                    to become a global crypto hub.
+                  </p>
+                </div>
+              </li>
+
+              <li class="topicsListItem">
+                <div class="topicListItemWrapper">
+                  <svg class="topicsListItemIcon" style="height: 55px">
+                    <use href="./images/svg/sprite.svg#topic-12-icon"></use>
+                  </svg>
+                  <div class="topicListItemTextWrapper">
+                    <p class="topicTitle">
+                      INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES
+                    </p>
+                    <p class="topicText">Dina Sam'an</p>
+                  </div>
+                </div>
+                <svg class="arrowIcon">
+                  <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                </svg>
+              </li>
+              <div class="topicsListItemInfo">
+                <p>
+                  CryptoBEAR is the blockchain conference network bringing
+                  together the key players of crypto industry and experts to
+                  redefine the future of finance. The edition of the CryptoBEAR
+                  will take place during on NOVEMBER 30, 2023 in Dubai, with the
+                  world’s top crypto companies and blockchain entrepreneurs.
+                  Today, UAE, specifically Dubai is gearing up to become a
+                  global crypto hub.
+                </p>
+              </div>
+            </ul>
+            <button type="button" class="button">SEE MORE</button>
+          </div>
+        </div>
+        <img
+          src="./images/topicsShapeLeft.png"
+          alt="shapeLeft"
+          class="topicsShapeLeft"
+        />
+        <img
+          src="./images/topicsShapeRight.png"
+          alt="shapeRight"
+          class="topicsShapeRight"
+        />
+      </div>
     </main>
     <footer></footer>
+
+    <script src="./js/timer.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/topicsPagination.js"></script>
   </body>
 </html>

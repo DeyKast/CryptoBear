@@ -1,0 +1,109 @@
+.timerContainer {
+  position: absolute;
+  top: -371px;
+  left: 8px;
+
+  width: 1492px;
+  height: 242px;
+
+  background-color: var(--gray-80-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+    bottom: -20px;
+    right: -20px;
+
+    border-radius: 2px;
+    border: 0.5px solid var(--gray-80-color);
+
+    z-index: 0;
+  }
+}
+
+.dateWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 289px;
+  height: 124px;
+  margin-right: 150px;
+  background-color: var(--gray-10-color);
+
+  border-radius: 2px;
+  border: 0.5px solid var(--gray-80-color);
+
+  color: var(--gray-80-color);
+
+  z-index: 1;
+}
+.timerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 46px;
+}
+
+.timerWrapperItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.timerWrapperItemBlock {
+  width: 120px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--purple-10-color);
+}
+
+.timerWrapperItemBlock > p {
+  color: var(--purple-90-color);
+  font-family: var(--press-start-text-family);
+  font-size: 32px;
+
+  text-shadow: 1px 0px var(--purple-10-color), 2px 0px var(--purple-90-color);
+}
+
+.tomorrowDateWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#tomorrowDay {
+  font-size: 64px;
+  letter-spacing: 2.56px;
+  color: var(--gray-80-color);
+
+  margin-right: 9px;
+}
+#tomorrowMonth {
+  font-size: 20px;
+  color: var(--gray-80-color);
+  line-height: 180%;
+  letter-spacing: 0.2px;
+}
+#tomorrowYear {
+  font-size: 20px;
+  color: var(--gray-80-color);
+  line-height: 180%;
+  letter-spacing: 0.2px;
+}

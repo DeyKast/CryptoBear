@@ -1,0 +1,29 @@
+.sectionAbout {
+  padding: 331px 0px 110px 0px;
+
+  background-color: var(--gray-10-color);
+}
+
+.containerAbout {
+  position: relative;
+}
+
+.aboutTextWrapper {
+  color: var(--gray-80-color);
+}
+
+.aboutTextWrapperTitle {
+  font-family: var(--press-start-text-family);
+  font-size: 48px;
+
+  margin-bottom: 26px;
+
+  text-shadow: 2px 1px var(--gray-10-color), 3px 2px var(--gray-80-color);
+}
+
+.aboutTextWrapperText {
+  font-size: 20px;
+
+  line-height: 180%;
+  letter-spacing: 0.2px;
+}

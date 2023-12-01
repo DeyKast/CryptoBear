@@ -13,16 +13,20 @@
 
   padding-top: 132px;
   padding-bottom: 138px;
+
+  position: relative;
 }
 
 .leftShapes {
   position: absolute;
   left: 0;
+  top: 98px;
   width: 540px;
   opacity: 0.9;
 }
 .rightShapes {
   position: absolute;
+  top: 98px;
   right: 0;
   width: 540px;
   opacity: 0.9;
