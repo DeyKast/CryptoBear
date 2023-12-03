@@ -1,0 +1,15 @@
+.sectionSponsors {
+  background-color: var(--gray-10-color);
+}
+.containerSponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sponsorsTitleWrapper {
+  width: 1235px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

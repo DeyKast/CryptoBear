@@ -1,20 +1,28 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/sticky";
 @import "./base/common";
-@import "./utils/visually-hidden";
 
 @import "./base/section";
 @import "./base/container";
 
-@import "./layout/header";
 @import "./components/burger-menu-btn";
+@import "./components/section-title";
+@import "./components/button";
+
+@import "./layout/header";
+
 @import "./components/logo";
 @import "./components/navigation-list";
 
 @import "./layout/hero";
-@import "./components/button";
 
 @import "./layout/section-about";
 @import "./components/timer";
 
 @import "./layout/topics";
+
+@import "./layout/sponsors";
+@import "./components/swiper";
+
+@import "./utils/visually-hidden";
