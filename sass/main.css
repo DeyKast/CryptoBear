@@ -449,7 +449,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: auto;
+  min-height: 120px;
   width: 1235px;
   border-radius: 2px;
   border: 0.5px solid var(--gray-10-color);
