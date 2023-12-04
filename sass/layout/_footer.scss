@@ -13,6 +13,28 @@
   align-items: center;
   justify-content: space-between;
 
+  flex-direction: column-reverse;
+
   max-width: none;
   width: 100%;
+
+  gap: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: none;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .containerFooter {
+    flex-direction: row;
+    gap: 0px;
+  }
 }

@@ -1,6 +1,6 @@
 .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -8,8 +8,8 @@
 @media screen and (min-width: 480px) {
   .container {
     max-width: 580px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1788px;
+    max-width: 1492px;
     padding-left: 120px;
     padding-right: 120px;
   }

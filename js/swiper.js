@@ -10,7 +10,30 @@ const swiper = new Swiper(".swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".arrowSlideNext",
-    prevEl: ".arrowSlidePrev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+
+    // when window width is >= 640px
+    1477: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+  },
+
+  autoplay: {
+    delay: 4000,
   },
 });

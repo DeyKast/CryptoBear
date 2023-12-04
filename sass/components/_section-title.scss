@@ -17,9 +17,9 @@
 
 .sectionTitleLight {
   font-family: var(--press-start-text-family);
-  font-size: 48px;
+  font-size: 15px;
 
-  margin-bottom: 50px;
+  margin-bottom: 26px;
 
   text-shadow: 3px 2px var(--gray-100-color), 4px 3px var(--gray-20-color);
 }
@@ -38,5 +38,16 @@
     text-shadow: 3px 2px var(--accent-color), 4px 3px var(--gray-20-color);
     top: -5px;
     right: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sectionTitleLight {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sectionTitleLight {
+    font-size: 48px;
   }
 }

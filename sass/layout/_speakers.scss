@@ -10,8 +10,8 @@
 
   width: 100%;
 
-  padding-top: 108px;
-  padding-bottom: 96px;
+  padding-top: 54px;
+  padding-bottom: 48px;
 
   position: relative;
 }
@@ -26,7 +26,7 @@
   width: 1235px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .speakersShapeLeft {
@@ -111,6 +111,7 @@
   letter-spacing: 0.22px;
 
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .speakerListItemText {
@@ -120,6 +121,7 @@
   font-size: 12px;
   line-height: 140%;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 
 .speakersListItemBlur {
@@ -148,4 +150,22 @@
   position: absolute;
   bottom: 40px;
   right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .speakersSection {
+    padding-top: 108px;
+    padding-bottom: 96px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .speakersTitleWrapper {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1477px) {
+  .speakersTitleWrapper {
+    justify-content: flex-start;
+  }
 }

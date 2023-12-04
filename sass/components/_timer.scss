@@ -12,6 +12,8 @@
   align-items: center;
   justify-content: flex-start;
 
+
+
   &::after {
     content: "";
     position: absolute;
@@ -153,6 +155,8 @@
   .timerContainer {
     height: 242px;
     width: 1492px;
+
+    top: -360px;
   }
   .dateWrapper {
     width: 289px;

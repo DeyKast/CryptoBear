@@ -1,6 +1,8 @@
 .swiper {
-  width: 1488px;
-  height: 200px;
+  width: 100%;
+  height: 180px;
+
+  position: unset;
 }
 
 .swiper-slide {
@@ -11,17 +13,8 @@
   justify-content: center;
 }
 
-.swiper-item {
-  width: 1236px;
-  height: 180px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .swiper-item-element {
-  width: 309px;
+  width: 100%;
   height: 180px;
 
   border: 1px solid var(--gray-20-color);
@@ -49,7 +42,7 @@
 }
 
 .swiper-item-info {
-  width: 309px;
+  width: 100%;
   height: 180px;
   padding: 29px 22px 29px 22px;
 
@@ -89,45 +82,15 @@
   background-color: var(--gray-80-color);
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  width: 64px;
-  height: 48px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.swiper-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: visible;
 }
 
 .swiperPrev,
 .swiperNext {
-  display: flex;
-  width: 64px;
-  height: 48px;
-
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 2px;
-  border: 0.5px solid var(--gray-20-color);
-
-  background: transparent;
-
-  transition: background var(--animation);
-
-  &::after {
-    display: none;
-  }
-
-  &:hover,
-  &:focus {
-    background: var(--ui-gradient);
-
-    .arrowSlidePrev,
-    .arrowSlideNext {
-      fill: var(--gray-0-color);
-    }
-  }
+  display: none;
 }
 
 .arrowSlidePrev {
@@ -144,4 +107,72 @@
 .swiper-button-prev svg,
 .swiper-button-next svg {
   width: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .swiperPrev,
+  .swiperNext {
+    top: 70%;
+  }
+  .swiperPrev {
+    left: calc(100% - 1150px);
+  }
+  .swiperNext {
+    right: calc(100% - 1150px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiperPrev,
+  .swiperNext {
+    display: flex;
+    width: 64px;
+    height: 48px;
+
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 0.5px solid var(--gray-20-color);
+
+    background: transparent;
+
+    transition: background var(--animation);
+
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background: var(--ui-gradient);
+
+      .arrowSlidePrev,
+      .arrowSlideNext {
+        fill: var(--gray-0-color);
+      }
+    }
+  }
+
+  .swiper {
+    width: 618px;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1477px) {
+  .swiper {
+    width: 1236px;
+    height: 180px;
+  }
+
+  .swiperPrev,
+  .swiperNext {
+    top: 70%;
+  }
+  .swiperPrev {
+    left: 0px + 20px;
+  }
+  .swiperNext {
+    right: 0px + 20px;
+  }
 }
