@@ -18,6 +18,7 @@
 
   navListItems.forEach((navListItem) => {
     navListItem.addEventListener("click", toggleMenu);
+    
   });
 
   // Close the mobile menu on wider screens if the device orientation changes

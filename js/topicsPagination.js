@@ -36,6 +36,7 @@ function seeMoreItems() {
   } else {
     for (let x = 4; x < topicsListItemsCount; x++) {
       topicsListItems[x].classList.add("visually-hidden");
+      window.location.href = "#topics";
     }
     currentPage = 1;
     seeMoreButton.innerHTML = "see more";
