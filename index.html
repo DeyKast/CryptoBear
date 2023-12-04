@@ -37,24 +37,67 @@
         <nav>
           <ul class="headerNavigationList">
             <li class="headerNavigationListItem">
-              <a href="#">About Event</a>
+              <a href="#about">About Event</a>
             </li>
             <li class="headerNavigationListItem">
-              <a href="#">Discussion topics</a>
+              <a href="#topics">Discussion topics</a>
             </li>
             <li class="headerNavigationListItem">
-              <a href="#">Our speakers</a>
+              <a href="#speakers">Our speakers</a>
             </li>
             <li class="headerNavigationListItem">
-              <a href="#">Our sponsors</a>
+              <a href="#sponsors">Our sponsors</a>
             </li>
           </ul>
         </nav>
-        <button type="button" class="burgerMenuBtn">
+        <button type="button" class="burgerMenuBtn" id="js-open-menu">
           <svg class="burgerMenuBtnIcon">
             <use href="./images/svg/sprite.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button
+            type="button"
+            class="modal-close-button mobile-menu__close-button js-close-menu"
+          >
+            <svg
+              aria-label="Закрити"
+              class="modal-close-button-icon mobile-menu__close-button-icon"
+            >
+              <use href="./images/svg/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <ul class="mobile-menu__navigation">
+              <li class="mobile-menu__navigation-item">
+                <a href="#about">About Event</a>
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a href="#topics">Discussion topics</a>
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a href="#speakers">Our speakers</a>
+              </li>
+              <li class="mobile-menu__navigation-item">
+                <a href="#sponsors">Our sponsors</a>
+              </li>
+            </ul>
+
+            <div class="logoWrapper">
+              <img src="./images/logo.png" alt="logo" class="logoImage" />
+              <p class="logoText">cryptobear</p>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -85,7 +128,7 @@
         </div>
       </div>
 
-      <div class="section sectionAbout">
+      <div class="section sectionAbout" id="about">
         <div class="container containerAbout">
           <div class="timerContainer">
             <div class="dateWrapper">
@@ -99,25 +142,23 @@
             <div class="timerWrapper">
               <div class="timerWrapperItem">
                 <div class="timerWrapperItemBlock"><p id="timerDays"></p></div>
-                <p style="text-transform: uppercase; font-size: 16px">days</p>
+                <p class="timerWrapperItemBlockText">days</p>
               </div>
               <div class="timerWrapperItem">
                 <div class="timerWrapperItemBlock"><p id="timerHours"></p></div>
-                <p style="text-transform: uppercase; font-size: 16px">hours</p>
+                <p class="timerWrapperItemBlockText">hours</p>
               </div>
               <div class="timerWrapperItem">
                 <div class="timerWrapperItemBlock">
                   <p id="timerMinutes"></p>
                 </div>
-                <p style="text-transform: uppercase; font-size: 16px">minuts</p>
+                <p class="timerWrapperItemBlockText">minuts</p>
               </div>
               <div class="timerWrapperItem">
                 <div class="timerWrapperItemBlock">
                   <p id="timerSeconds"></p>
                 </div>
-                <p style="text-transform: uppercase; font-size: 16px">
-                  seconds
-                </p>
+                <p class="timerWrapperItemBlockText">seconds</p>
               </div>
             </div>
           </div>
@@ -142,11 +183,13 @@
         </div>
       </div>
 
-      <div class="section sectionTopics">
+      <div class="section sectionTopics" id="topics">
         <div class="container">
-          <h2 class="topicsTitle">
+          <h2 class="sectionTitleLight">
             Discussion
-            <span class="topicsTitlePart" data-content="Topics">Topics</span>
+            <span class="sectionTitleLightPart" data-content="Topics"
+              >Topics</span
+            >
           </h2>
           <div
             style="
@@ -171,7 +214,9 @@
                       <p class="topicText">Sunny Lu</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -199,7 +244,9 @@
                       <p class="topicText">Gracy Chen</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -233,7 +280,9 @@
                       </p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -263,7 +312,9 @@
                       <p class="topicText">Max Kordek</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -293,7 +344,9 @@
                       <p class="topicText">Helen Hai</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -321,7 +374,9 @@
                       <p class="topicText">Jason Allegrante</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -349,7 +404,9 @@
                       <p class="topicText">Sunny Lu</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -379,7 +436,9 @@
                       <p class="topicText">Reece Merrick</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -413,7 +472,9 @@
                       <p class="topicText">Mohammed Alblooshi</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -445,7 +506,9 @@
                       <p class="topicText">Sunny Lu</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -475,7 +538,9 @@
                       <p class="topicText">Alex Zinder & Nicole Purin</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -505,7 +570,9 @@
                       <p class="topicText">Dina Sam'an</p>
                     </div>
                     <svg class="arrowIcon">
-                      <use href="./images/svg/sprite.svg#arrow-down-icon"></use>
+                      <use
+                        href="./images/svg/sprite.svg#topic-arrow-down-icon"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -544,7 +611,7 @@
         />
       </div>
 
-      <div class="section sectionSponsors">
+      <div class="section sectionSponsors" id="sponsors">
         <div class="container containerSponsors">
           <div class="sponsorsTitleWrapper">
             <h2 class="sectionTitle" style="margin-bottom: 50px">
@@ -714,12 +781,189 @@
           </div>
         </div>
       </div>
+
+      <div class="section speakersSection" id="speakers">
+        <div class="container containerSpeakers">
+          <div class="speakersTitleWrapper">
+            <h2 class="sectionTitleLight">
+              Our
+              <span class="sectionTitleLightPart" data-content="Speakers"
+                >Speakers</span
+              >
+            </h2>
+          </div>
+          <div class="speakersListWrapper">
+            <ul class="speakersList">
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker1.png"
+                  alt="speaker1"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Sunny-Lu</p>
+                <p class="speakerListItemText">Vechain</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker2.png"
+                  alt="speaker2"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Helen-Hai</p>
+                <p class="speakerListItemText">Binance</p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker3.png"
+                  alt="speaker3"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Alex-Zinder</p>
+                <p class="speakerListItemText">Ledger Enterprise</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker4.png"
+                  alt="speaker4"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Jean Charles-Gaudechon</p>
+                <p class="speakerListItemText">OneFootball Labs</p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker5.png"
+                  alt="speaker5"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Gracy-Chen</p>
+                <p class="speakerListItemText">Bitget</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker6.png"
+                  alt="speaker6"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Mohammed-Alblooshi</p>
+                <p class="speakerListItemText">
+                  Dubai International Financial Centre Authority
+                </p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker7.png"
+                  alt="speaker7"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Max-Kordek</p>
+                <p class="speakerListItemText">Lisk</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker8.png"
+                  alt="speaker8"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Nena-Dokuzov</p>
+                <p class="speakerListItemText">Alserkal Group</p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker9.png"
+                  alt="speaker9"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Reece-Merrick</p>
+                <p class="speakerListItemText">Reece-Merrick</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker10.png"
+                  alt="speaker10"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Dina-Sam'an</p>
+                <p class="speakerListItemText">CoinMENA</p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker11.png"
+                  alt="speaker11"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Nicole-Purin</p>
+                <p class="speakerListItemText">OKX</p>
+
+                <div class="speakersListItemBlur"></div>
+              </li>
+              <li class="speakerListItem">
+                <img
+                  src="./images/speakers/speaker12.png"
+                  alt="speaker12"
+                  class="speakerListItemImage"
+                />
+                <p class="speakerListItemName">Jason-Allegrante</p>
+                <p class="speakerListItemText">Fireblocks</p>
+
+                <div class="speakersListItemBlur"></div>
+                <div class="speakersListItemBlurBottom"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="speakersShapeLeft">
+            <img src="./images/speakersShapeLeft.png" alt="speakersShapeLeft" />
+          </div>
+          <div class="speakersShapeRight">
+            <img
+              src="./images/speakersShapeRight.png"
+              alt="speakersShapeRight"
+            />
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="section sectionFooter">
+        <div class="container containerFooter">
+          <a href="#" class="logoWrapper">
+            <img src="./images/logo.png" alt="logo" class="logoImage" />
+            <p class="logoText">cryptobear</p>
+          </a>
+          <button type="button" class="button outline">buy ticket</button>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/timer.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/topicsPagination.js"></script>
+    <script src="./js/mobileMenuToggle.js"></script>
 
     <script src="
     https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js

@@ -9,27 +9,66 @@
   background-position: center;
 
   width: 100%;
-  height: 607px;
+  height: 400px;
 
-  padding-top: 132px;
-  padding-bottom: 138px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 
   position: relative;
 }
 
 .leftShapes {
+  width: 200px;
+
   position: absolute;
   left: 0;
-  top: 98px;
-  width: 540px;
+  top: 60px;
   opacity: 0.9;
 }
 .rightShapes {
+  width: 200px;
+
   position: absolute;
-  top: 98px;
   right: 0;
-  width: 540px;
+  bottom: 60px;
   opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .heroSection {
+    padding-top: 132px;
+    padding-bottom: 138px;
+
+    height: 603px;
+  }
+
+  .leftShapes {
+    display: block;
+    width: 360px;
+
+    position: absolute;
+    left: 0;
+    top: 98px;
+    opacity: 0.9;
+  }
+  .rightShapes {
+    display: block;
+    width: 360px;
+
+    position: absolute;
+    top: 98px;
+    right: 0;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .leftShapes {
+    width: 540px;
+  }
+  .rightShapes {
+    width: 540px;
+  }
 }
 
 .heroContainer {
@@ -40,9 +79,9 @@
 }
 
 .heroTitle {
-  width: 750px;
+  width: 250px;
 
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 152%;
   text-transform: uppercase;
@@ -59,20 +98,34 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  font-size: 64px;
+  font-size: 32px;
   text-transform: none;
 }
 
 .heroTitleSubAccent {
-  font-size: 64px;
+  font-size: 32px;
 }
 
 .heroText {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 180%;
   letter-spacing: 0.2px;
 
   margin-bottom: 33px;
+}
 
-  z-index: 100;
+@media screen and (min-width: 768px) {
+  .heroTitle {
+    width: 750px;
+    font-size: 48px;
+  }
+  .heroTitleAccent {
+    font-size: 64px;
+  }
+  .heroTitleSubAccent {
+    font-size: 64px;
+  }
+  .heroText {
+    font-size: 20px;
+  }
 }

@@ -1,5 +1,5 @@
 .sectionAbout {
-  padding: 331px 0px 110px 0px;
+  padding: 160px 0px 60px 0px;
 
   background-color: var(--gray-10-color);
 
@@ -15,12 +15,38 @@
 
 .aboutTextWrapper {
   color: var(--gray-80-color);
-  max-width: 1233px;
+  max-width: 350px;
 }
 
 .aboutTextWrapperText {
-  font-size: 20px;
+  font-size: 12px;
 
   line-height: 180%;
   letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionAbout {
+    padding: 290px 0px 110px 0px;
+  }
+  .aboutTextWrapper {
+    max-width: 680px;
+  }
+  .aboutTextWrapperText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionAbout {
+    padding: 331px 0px 110px 0px;
+  }
+
+  .aboutTextWrapper {
+    max-width: 1233px;
+  }
+
+  .aboutTextWrapperText {
+    font-size: 20px;
+  }
 }

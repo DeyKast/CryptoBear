@@ -1,0 +1,18 @@
+.sectionFooter {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: var(--gray-100-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: none;
+  width: 100%;
+}

@@ -1,0 +1,151 @@
+.speakersSection {
+  background-image: linear-gradient(
+      rgba(18, 17, 21, 0.92),
+      rgba(18, 17, 21, 0.92)
+    ),
+    url("../../images/pixelBackground.png"),
+    linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
+  background-repeat: repeat;
+  background-position: center;
+
+  width: 100%;
+
+  padding-top: 108px;
+  padding-bottom: 96px;
+
+  position: relative;
+}
+
+.containerSpeakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.speakersTitleWrapper {
+  width: 1235px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.speakersShapeLeft {
+  position: absolute;
+
+  width: 458px;
+  height: 475px;
+
+  top: 175px;
+  left: -130px;
+}
+.speakersShapeRight {
+  position: absolute;
+
+  width: 732px;
+  height: 758px;
+
+  bottom: 148px;
+  right: -200px;
+}
+
+.speakersListWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakersList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 24px;
+
+  max-width: 1238px;
+}
+
+.speakerListItem {
+  max-width: 290px;
+  height: 400px;
+
+  padding-left: 21px;
+  padding-right: 21px;
+
+  flex-shrink: 0;
+
+  border: 0.5px solid var(--gray-20-color);
+  background: var(--gray-100-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 100000;
+
+  transition: background var(--animation);
+
+  &:hover,
+  &:focus {
+    background: var(--gray-80-color);
+  }
+}
+
+.speakerListItemImage {
+  width: 248px;
+  height: 248px;
+
+  margin-bottom: 18px;
+
+  background-color: var(--gray-100-color);
+  border-radius: 50%;
+}
+
+.speakerListItemName {
+  color: var(--gray-0-color);
+
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.22px;
+
+  margin-bottom: 8px;
+}
+
+.speakerListItemText {
+  color: var(--accent-color);
+
+  font-family: var(--press-start-text-family);
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.6px;
+}
+
+.speakersListItemBlur {
+  width: 53px;
+  height: 37px;
+  flex-shrink: 0;
+
+  opacity: 0.5;
+  background: var(--Gray_0, #fff);
+  filter: blur(57.5px);
+
+  position: absolute;
+  top: 40px;
+  left: 30px;
+}
+
+.speakersListItemBlurBottom {
+  width: 53px;
+  height: 37px;
+  flex-shrink: 0;
+
+  opacity: 0.5;
+  background: var(--Gray_0, #fff);
+  filter: blur(57.5px);
+
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+}

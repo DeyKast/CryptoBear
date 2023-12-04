@@ -20,32 +20,6 @@
   justify-content: center;
 }
 
-.topicsTitle {
-  font-family: var(--press-start-text-family);
-  font-size: 48px;
-
-  margin-bottom: 50px;
-
-  text-shadow: 3px 2px var(--gray-100-color), 4px 3px var(--gray-20-color);
-}
-
-.topicsTitlePart {
-  background: var(--gray-20-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  position: relative;
-
-  &::before {
-    content: attr(data-content);
-    position: absolute;
-    text-shadow: 3px 2px var(--accent-color), 4px 3px var(--gray-20-color);
-    top: -5px;
-    right: 3px;
-  }
-}
-
 .topicsList {
   display: flex;
   flex-direction: column;
@@ -117,6 +91,8 @@
 
   position: absolute;
   right: 28px;
+
+  fill: var(--gray-10-color);
 }
 
 .topicsListItemContainerWrapper {

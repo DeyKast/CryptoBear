@@ -1,10 +1,10 @@
 .timerContainer {
   position: absolute;
-  top: -371px;
+  top: -180px;
   left: 8px;
 
-  width: 1492px;
-  height: 242px;
+  width: 100%;
+  height: 120px;
 
   background-color: var(--gray-80-color);
 
@@ -34,9 +34,9 @@
   align-items: center;
   justify-content: center;
 
-  width: 289px;
-  height: 124px;
-  margin-right: 150px;
+  width: 100px;
+  height: 60px;
+  margin-right: 20px;
   background-color: var(--gray-10-color);
 
   border-radius: 2px;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
 
-  gap: 46px;
+  gap: 13px;
 }
 
 .timerWrapperItem {
@@ -60,12 +60,12 @@
   align-items: center;
   justify-content: center;
 
-  gap: 12px;
+  gap: 6px;
 }
 
 .timerWrapperItemBlock {
-  width: 120px;
-  height: 80px;
+  width: 30px;
+  height: 20px;
 
   display: flex;
   flex-direction: column;
@@ -78,9 +78,14 @@
 .timerWrapperItemBlock > p {
   color: var(--purple-90-color);
   font-family: var(--press-start-text-family);
-  font-size: 32px;
+  font-size: 10px;
 
   text-shadow: 1px 0px var(--purple-10-color), 2px 0px var(--purple-90-color);
+}
+
+.timerWrapperItemBlockText {
+  font-size: 8px;
+  text-transform: uppercase;
 }
 
 .tomorrowDateWrapper {
@@ -89,21 +94,79 @@
 }
 
 #tomorrowDay {
-  font-size: 64px;
+  font-size: 30px;
   letter-spacing: 2.56px;
   color: var(--gray-80-color);
-
-  margin-right: 9px;
 }
 #tomorrowMonth {
-  font-size: 20px;
+  font-size: 8px;
   color: var(--gray-80-color);
   line-height: 180%;
   letter-spacing: 0.2px;
 }
 #tomorrowYear {
-  font-size: 20px;
+  font-size: 8px;
   color: var(--gray-80-color);
   line-height: 180%;
   letter-spacing: 0.2px;
+}
+
+@media screen and (min-width: 768px) {
+  .timerContainer {
+    height: 242px;
+    width: 1492px;
+
+    top: -310px;
+  }
+  .dateWrapper {
+    width: 200px;
+    height: 100px;
+    margin-right: 50px;
+  }
+  .timerWrapper {
+    gap: 25px;
+  }
+  .timerWrapperItemBlock {
+    width: 100px;
+    height: 80px;
+  }
+  .timerWrapperItemBlock > p {
+    font-size: 28px;
+  }
+  .timerWrapperItemBlockText {
+    font-size: 16px;
+  }
+
+  #tomorrowDay {
+    font-size: 64px;
+    margin-right: 9px;
+  }
+  #tomorrowMonth {
+    font-size: 20px;
+  }
+  #tomorrowYear {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .timerContainer {
+    height: 242px;
+    width: 1492px;
+  }
+  .dateWrapper {
+    width: 289px;
+    height: 124px;
+    margin-right: 150px;
+  }
+  .timerWrapper {
+    gap: 46px;
+  }
+  .timerWrapperItemBlock {
+    width: 120px;
+    height: 80px;
+  }
+  .timerWrapperItemBlock > p {
+    font-size: 32px;
+  }
 }

@@ -6,6 +6,14 @@
   height: 50px;
 
   margin-top: 10px;
+
+  transition: fill var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
 }
 .burgerMenuBtnIcon {
   width: 50px;
