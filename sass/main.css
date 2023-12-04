@@ -1156,6 +1156,7 @@ img {
 .speakerListItem {
   max-width: 290px;
   height: 400px;
+  overflow: hidden;
   padding-left: 21px;
   padding-right: 21px;
   flex-shrink: 0;
