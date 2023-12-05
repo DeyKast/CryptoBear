@@ -12,8 +12,6 @@
   align-items: center;
   justify-content: flex-start;
 
-
-
   &::after {
     content: "";
     position: absolute;
@@ -116,7 +114,6 @@
 @media screen and (min-width: 768px) {
   .timerContainer {
     height: 242px;
-    width: 1492px;
 
     top: -310px;
   }
@@ -154,7 +151,6 @@
 @media screen and (min-width: 1200px) {
   .timerContainer {
     height: 242px;
-    width: 1492px;
 
     top: -360px;
   }
