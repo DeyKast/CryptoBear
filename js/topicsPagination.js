@@ -1,9 +1,7 @@
 const topicItems = document.querySelectorAll(".topicsListItem");
 
 (() => {
-  window.addEventListener("load", () => {
-    document.body.style.overflowX = "hidden";
-  });
+  document.body.style.overflowX = "hidden";
 })();
 
 topicItems.forEach((topicItem) => {

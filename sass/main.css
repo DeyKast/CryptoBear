@@ -66,8 +66,7 @@ img {
 .section {
   padding-top: 110px;
   padding-bottom: 110px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -480,7 +479,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: visible;
+  overflow: visible;
 }
 
 .containerAbout {
