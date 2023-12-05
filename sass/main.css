@@ -363,7 +363,7 @@ img {
   }
 }
 .heroSection {
-  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("../../images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
+  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("../images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
   background-repeat: repeat;
   background-position: center;
   width: 100%;
@@ -676,7 +676,7 @@ img {
   }
 }
 .sectionTopics {
-  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("../../images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
+  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("./images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
   background-repeat: repeat;
   background-position: center;
   position: relative;
@@ -1098,7 +1098,7 @@ img {
   }
 }
 .speakersSection {
-  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("../../images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
+  background-image: linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92)), url("../images/pixelBackground.png"), linear-gradient(rgba(18, 17, 21, 0.92), rgba(18, 17, 21, 0.92));
   background-repeat: repeat;
   background-position: center;
   width: 100%;
