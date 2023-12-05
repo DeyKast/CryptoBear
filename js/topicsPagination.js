@@ -1,5 +1,11 @@
 const topicItems = document.querySelectorAll(".topicsListItem");
 
+(() => {
+  window.addEventListener("load", () => {
+    document.body.style.overflowX = "hidden";
+  });
+})();
+
 topicItems.forEach((topicItem) => {
   const topicInfo = topicItem.querySelector(".topicsListItemInfo");
   const arrowIcon = topicItem.querySelector(".arrowIcon");
@@ -36,7 +42,11 @@ function seeMoreItems() {
   } else {
     for (let x = 4; x < topicsListItemsCount; x++) {
       topicsListItems[x].classList.add("visually-hidden");
-      window.location.href = "#topics";
+      window.scrollTo({
+        top: 1500,
+        left: 0,
+        behavior: "smooth",
+      });
     }
     currentPage = 1;
     seeMoreButton.innerHTML = "see more";
