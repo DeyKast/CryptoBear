@@ -66,7 +66,7 @@ img {
 .section {
   padding-top: 110px;
   padding-bottom: 110px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -479,7 +479,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .containerAbout {
@@ -622,6 +622,7 @@ img {
 @media screen and (min-width: 768px) {
   .timerContainer {
     height: 242px;
+    width: 1492px;
     top: -310px;
   }
   .dateWrapper {
@@ -656,6 +657,7 @@ img {
 @media screen and (min-width: 1200px) {
   .timerContainer {
     height: 242px;
+    width: 1492px;
     top: -360px;
   }
   .dateWrapper {

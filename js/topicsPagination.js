@@ -1,17 +1,5 @@
 const topicItems = document.querySelectorAll(".topicsListItem");
 
-(() => {
-  document.body.style.overflowX = "hidden";
-
-  const preventHorizontalScroll = (e) => {
-    e.preventDefault();
-  };
-
-  document.addEventListener("touchmove", preventHorizontalScroll, {
-    passive: false,
-  });
-})();
-
 topicItems.forEach((topicItem) => {
   const topicInfo = topicItem.querySelector(".topicsListItemInfo");
   const arrowIcon = topicItem.querySelector(".arrowIcon");
